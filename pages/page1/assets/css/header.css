@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+
+.header {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header nav ul {
+    list-style-type: none;
+}
+
+.header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.header nav ul li a.active {
+    background-color: #333;
+}

@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://i.pinimg.com/564x/2a/41/d3/2a41d3440bf53733ba7fa7bc4e7fb812.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.5);
+    z-index: -1;
+}
+
+.content {
+    text-align: center;
+    padding: 20px;
+}
+
+.title {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+
+}
+
+.subtitle2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+
+}
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.date, .description {
+    margin-right: 20px;
+}
+
+.day, .month {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.description .text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.subtitle2 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    margin-top: 10px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30%;
+    margin-top: 50px;
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+    width: 300px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+    line-height: 1.6;
+}
