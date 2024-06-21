@@ -13,15 +13,12 @@
 
 .header nav ul {
     list-style-type: none;
-
-    & li {
-    display: inline;
-    margin: 0 10px;
-    }
-    
 }
 
-
+.header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
 
 .header nav ul li a {
     color: white;
@@ -29,8 +26,8 @@
     font-size: 18px;
     padding: 10px 20px;
     border-radius: 5px;
+}
 
-    &:hover {
-        outline: solid 2px #fff;
-    }
+.header nav ul li a.active {
+    background-color: #333;
 }

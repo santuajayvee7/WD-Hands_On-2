@@ -2,8 +2,15 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto',sans-serif;
 }
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+
+root {
+    --font-primary: 'Roboto',sans-serif;
+ }
+
 
 body {
     overflow-x: hidden;
@@ -83,26 +90,58 @@ body {
 
 .cards {
     display: flex;
-    justify-content: center;
-    gap: 30%;
+    justify-content: space-between; /* Adjusted to create a 30/70 split */
     margin-top: 50px;
 }
 
-.card {
+/* Existing styles remain unchanged */
+
+.cards {
+    display: flex;
+    justify-content: space-between; /* Adjusted to create a 30/70 split */
+    margin-top: 50px;
+}
+
+.card-league,
+.card-champions {
     background-color: rgba(0, 0, 0, 0.2);
     padding: 20px;
     border-radius: 8px;
     text-align: left;
-    width: 300px;
+    width: calc(30% - 15px); /* Adjusted width for 30% */
+    position: relative; /* Ensure proper positioning */
 }
 
-.card-title {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+.typeIcon {
+    width: 60px; 
+    height: 60px; 
+    background-color: rgba(0, 0, 0, 0.2); 
+    border-radius: 50%; 
+    position: absolute;
+    top: -30px; 
+    left: 50%;
+    transform: translateX(-50%); 
+}
+
+.typeIcon img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+}
+
+.role {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.role h5 {
+    font-size: 1rem;
     font-weight: bold;
 }
 
-.card-text {
-    font-size: 1rem;
-    line-height: 1.6;
+.card-title h2{
+    font-family:'Libre Baskerville', serif;
+    font-size: 1.2rem;
+
 }
