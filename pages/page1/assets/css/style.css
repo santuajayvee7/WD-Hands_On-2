@@ -94,11 +94,11 @@ body {
     margin-top: 50px;
 }
 
-/* Existing styles remain unchanged */
+
 
 .cards {
     display: flex;
-    justify-content: space-between; /* Adjusted to create a 30/70 split */
+    justify-content: space-evenly; /* Adjusted to create a 30/70 split */
     margin-top: 50px;
 }
 
@@ -107,15 +107,16 @@ body {
     background-color: rgba(0, 0, 0, 0.2);
     padding: 20px;
     border-radius: 8px;
-    text-align: left;
-    width: calc(30% - 15px); /* Adjusted width for 30% */
-    position: relative; /* Ensure proper positioning */
+    text-align: center;
+    width: calc(30% - 15px);
+    position: relative; 
+    
 }
 
 .typeIcon {
     width: 60px; 
     height: 60px; 
-    background-color: rgba(0, 0, 0, 0.2); 
+    background-color: rgba(0, 0, 0, 0.5); 
     border-radius: 50%; 
     position: absolute;
     top: -30px; 
@@ -140,8 +141,3 @@ body {
     font-weight: bold;
 }
 
-.card-title h2{
-    font-family:'Libre Baskerville', serif;
-    font-size: 1.2rem;
-
-}

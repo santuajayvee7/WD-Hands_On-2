@@ -1,33 +1,75 @@
 * {
+    margin:0 ;
     padding: 0;
-    margin: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+
+:root {
+    --color-primary: #ffffff;
+    --color-secondary: #333333;
+    --color-accent: #c6a288;
+    --font-primary: 'Libre Baskerville', serif; 
 }
 
+body {
+    
+    padding: 0px;
+    margin: 0px;
 
-.header {
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 20px 0;
+}
+
+.hero {
+    background-image: url('https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3FieDhkNHlkcmxrcHlta2V0d282a3J4czJvOWQwMnhsMHBrYXFudyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ivsMxG8IgcX6nRPU0f/giphy.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    color: #252525;
     text-align: center;
+    padding: 100px 20px; /* Adjust padding as needed */
+    height: 100vh; /* Make the hero section height equal to viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.header nav ul {
-    list-style-type: none;
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+    z-index: 1; /* Ensure content is above the background */
 }
 
-.header nav ul li {
-    display: inline;
-    margin: 0 10px;
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
 }
 
-.header nav ul li a {
-    color: white;
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    opacity: 0.8;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #4CAF50;
+    color: #fff;
     text-decoration: none;
-    font-size: 18px;
-    padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
 }
 
-.header nav ul li a.active {
-    background-color: #333;
+.button:hover {
+    background-color: #45a049;
 }
+
+
