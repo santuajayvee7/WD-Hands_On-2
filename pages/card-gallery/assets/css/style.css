@@ -27,10 +27,17 @@ body {
     
     & h1, h2 {
         font-family: 'Libre Baskerville', serif;
+       
 
 
     }
 }
+
+h1 {
+    padding-left: 10px;
+}
+
+
 
 .header-page a {
     color: #9c9696;
@@ -102,6 +109,7 @@ body {
     border-top: 8px solid #fff; 
     border-right: 8px solid #fff;
     border-top-right-radius: 25px;
+    padding: 20px 15px;
 
 
     &:after {
@@ -138,8 +146,8 @@ body {
 .imgBx::after {
     content:'';
         position:absolute;
-        bottom: -1px;
-        right: 243px;
+        bottom: 1px;
+        right: 175px;
         width: 20px;
         height: 20px;
         background: transparent;
@@ -160,6 +168,7 @@ body {
     border-radius: 5px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
     font-weight: 500;
+    
     
 }
 
@@ -231,19 +240,20 @@ body {
     position: absolute;
     padding: 20px;
     color: #c7c7c7;
-    top:150px;
+    top:140px;
     text-align: center;
     justify-content: center;
-    letter-spacing: 0.1em;
     text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.5px;
 
     & h3 {
         color: #fff;
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-weight: 800;
         text-transform: uppercase;
         letter-spacing: 0.3em;
-        padding-bottom: 25px;
+        padding-bottom: 20px;
         
     }
 }
@@ -308,7 +318,7 @@ body {
     
 }
 
-.content3 h1 {
+.content3 h2 {
     color: #c5b451; 
     font-size: 2rem; 
     margin: 0; 
@@ -316,6 +326,182 @@ body {
     letter-spacing: 2px;
 }
 
+/* <----------- Design 4 ----------------> */
+
+
+.card4-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.card4 {
+    width: 325px;
+    height: auto;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow:hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0.15);
+    margin: 20px;
+}
+
+.card4 .ahri {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    justify-content: center;
+
+}
+
+.card4-content {
+    padding: 15px;
+
+    .button4 {
+        display: inline-block;
+        padding: 8px 16px;
+        background-color: #333;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 16px;
+        color: #fff;
+    }
+}
+
+.card4-content h3{
+    font-size: 28px;
+    margin-bottom: 7px;
+    font-family: 'Poppins',serif;
+    margin-left: 10px;
+
+}
+
+.card4-content p{
+    color: #666;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-left: 5px;
+}
+
+
+/* <--------------- Design 5 --------------------> */
+
+.slide-container {
+    margin: auto;
+    width: 600px;
+    text-align: center;
+  }
+  
+  .wrapper {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  
+  .clash-card-barbarian {
+    background: white;
+    width: 300px;
+    display: inline-block;
+    margin: auto;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    box-shadow: -1px 15px 30px -12px black;
+    z-index: 9999;
+  }
+  
+  .clash-card__image {
+    position: relative;
+    justify-content: center;
+    height: 230px;
+    margin-bottom: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow: hidden; /* Ensures image corners are rounded */
+  }
+  
+  .clash-card__image img {
+    width: auto;
+    height: 100%;
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  
+  
+  .clash-card__unit-name {
+    font-size: 26px;
+    color: black;
+    font-weight: 900;
+    margin-bottom: 5px;
+  }
+  
+  .clash-card__unit-description {
+    padding: 0 20px;
+    margin-bottom: 10px;
+    color: #666;
+    line-height: 1.4;
+  }
+  
+  .clash-card__unit-stats {
+    color: white;
+    font-weight: 700;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #a16d42;
+    overflow: hidden; /* Ensures rounded corners */
+  }
+  
+  .clash-card__unit-stats .one-third {
+    width: 33.33%;
+    float: left;
+    padding: 20px 15px;
+    box-sizing: border-box; /* Ensures padding is included in width */
+    text-align: center;
+    border-right: 1px solid rgba(255, 255, 255, 0.2); /* Adjust as needed */
+  }
+  
+  .clash-card__unit-stats .one-third:last-child {
+    border-right: none; /* Removes border from last item */
+  }
+  
+  .clash-card__unit-stats sup {
+    position: absolute;
+    bottom: 4px;
+    font-size: 45%;
+    margin-left: 2px;
+  }
+  
+  .clash-card__unit-stats .stat {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  
+  .clash-card__unit-stats .stat-value {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 12px;
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .slick-prev {
+    left: 100px;
+    z-index: 999;
+  }
+  
+  .slick-next {
+    right: 100px;
+    z-index: 999;
+  }
+  
 
 
 
