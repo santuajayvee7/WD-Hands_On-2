@@ -110,6 +110,4 @@ body {
     transition: background-color 0.3s ease;
 }
 
-.hero .content .right .button:hover {
-    background-color: #45a049;
-}
+
