@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #ffffff;
+    color: #333;
+    font-family: 'Roboto',sans-serif;
+   
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-image: url('https://media1.tenor.com/m/VBvF2AWtEssAAAAd/leblanc-leblanc-lol.gif');
+    background-size: cover; 
+    background-position: center; 
+}
+
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.centered-image {
+    width: 700px;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    object-fit: contain;
+}
+
+
+
+.hero1-content {
+    position: absolute;
+    top: 100px; /* Adjust top position as needed */
+    left: 20px; /* Adjust left position as needed */
+    max-width: 400px; /* Adjust max-width as needed */
+    padding: 20px;
+    background-color: transparent;
+ }
+ 
+ 
+ .hero1-content h1 {
+    font-size: 36px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+ }
+ 
+ 
+ .hero1-content h3 {
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 10px;
+    color: rgba(212, 210, 80, 0.37);
+ }
+ 
+ 
+ .hero1-content .desc {
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.6;
+    width: 80%; 
+    max-width: 400px; 
+    margin-right: 25px; 
+ }
+
+
+
+.name {
+    position: absolute;
+    top: 80px;
+    right: 40px;
+    padding: 20px;
+    z-index: 1;
+}
+
+.name h1 {
+    
+    font-size: 130px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: #948f45;
+    margin-bottom: -45px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+.img-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.desc2 {
+    position: absolute;
+    top: -360%;
+    left: 10%;
+    width: 150px;
+    padding: 6px;
+    background-color: rgba(212, 210, 80, 0.37);
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.desc2 h3{
+    font-size: 15px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.cont1 {
+    position: absolute;
+    top: -600%;
+    left: -50%;
+    width: 150px;
+    padding: 6px;
+    background-color: rgba(212, 210, 80, 0.37);
+    border-radius: 10px;
+    z-index: 0;
+}
+
+.cont2 {
+    position: absolute;
+    bottom: -450%;
+    right: -40%;
+    width: 150px;
+    padding: 6px;
+    background-color: rgba(212, 210, 80, 0.37);
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.desc2 img,
+.cont1 img,
+.cont2 img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+.hero1-content2 {
+    position: absolute;
+    bottom: 120px; /* Adjust bottom position as needed */
+    right: 15px; /* Adjust right position as needed */
+    max-width: 400px; /* Adjust max-width as needed */
+    padding: 20px;
+    background-color: transparent;
+    color: rgb(255, 255, 255); /* Ensure text color is visible */
+    text-align: right; /* Justify text to the right */
+
+    z-index: 1; /* Ensure it's above the background */
+ }
+ 
+ 
+ .hero1-content2 h1 {
+    font-size: 36px;
+    color: rgb(255, 255, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: right; /* Align the h1 text to the right */
+ }
+ 
+ 
+ .hero1-content2 h3 {
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.6;
+    width: 100%; /* Ensure full width */
+    max-width: 250px; /* Limit maximum width */
+    margin-right: 0; /* Remove right margin */
+    text-align: right; /* Justify text to the right */
+ }
